@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-hover: #f8fafc;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --grid-bg: #f1f5f9;
+  --header-bg: #f8fafc;
+  --header-text: #64748b;
+  --toolbar-bg: #ffffff;
+  --primary: #3b82f6;
+  --background-sheet: #f8fafc;
+  --border-sheet: #e2e8f0;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --surface: #0f172a;
+  --surface-hover: #1e293b;
+  --border: #334155;
+  --border-strong: #475569;
+  --grid-bg: #020617;
+  --header-bg: #1e293b;
+  --header-text: #94a3b8;
+  --toolbar-bg: #0f172a;
+  --primary: #60a5fa;
+  --background-sheet: #020617;
+  --border-sheet: #334155;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-background-sheet: var(--background-sheet);
+  --color-border-sheet: var(--border-sheet);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border-subtle: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-grid-main: var(--grid-bg);
+  --color-header-bg: var(--header-bg);
+  --color-header-text: var(--header-text);
+  --color-toolbar: var(--toolbar-bg);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
