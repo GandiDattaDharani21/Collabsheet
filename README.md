@@ -25,7 +25,7 @@ https://drive.google.com/file/d/1nZ648Ha_Wl8JMz0AqdLVcVEy9jZLtCSB/view?usp=shari
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/GandiDattaDharani21/Collabsheet.git
 ```
 
 Install dependencies:
