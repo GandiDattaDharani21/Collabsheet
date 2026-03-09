@@ -92,7 +92,7 @@ export function Cell({
   const displayValue = computedValue !== undefined ? computedValue : value;
 
   const cellStyle: React.CSSProperties = {
-    fontWeight: style?.bold ? "bold" : "normal",
+    fontWeight: style?.bold ? 700 : 500,
     fontStyle: style?.italic ? "italic" : "normal",
     color: style?.color || "inherit",
     backgroundColor: style?.backgroundColor || "transparent",
@@ -129,7 +129,7 @@ export function Cell({
       ) : (
         <span className={cn(
           "truncate w-full",
-          displayValue === "#ERROR!" || displayValue === "#REF!" ? "text-red-500 font-bold" : "text-foreground font-medium"
+          (displayValue === "#ERROR!" || displayValue === "#REF!") ? "text-red-500 font-bold" : "text-foreground"
         )}
         style={{ color: style?.color }}
         >
